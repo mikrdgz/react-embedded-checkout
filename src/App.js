@@ -1,25 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { createCheckoutService } from '@bigcommerce/checkout-sdk';
+
+embedCheckout({
+"containerId": "bc-embedded-checkout",
+"url": "https://mikaelarodriguez.com/cart.php?embedded=1&action=loadInCheckout&id=c9559566-9c2d-470e-9ff3-62feb6cc70b5&token=c10526531c996fb90ec910ccc21aa175f6ba4319d77bcda77f8f118fd81183d2",
+"styles": {
+"button": {
+	"backgroundColor": "#ffffff",
+	"borderColor": "#000000",
+	"color": "#000000"
+}
+}
+});
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div id="bc-embedded-checkout"></div>
   );
 }
 
