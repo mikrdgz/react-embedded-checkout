@@ -22,7 +22,7 @@ componentDidMount(){
   })
  }
  render(){
-   return <h1>BC SDK</h1>
+   return <h1>BC Checkout</h1>
  }
 }
 
