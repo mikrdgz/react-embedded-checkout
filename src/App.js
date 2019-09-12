@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import {createCheckoutService} from '@bigcommerce/checkout-sdk'
-//import {embedCheckout} from '@bigcommerce/checkout-sdk'
+//import {createCheckoutService} from '@bigcommerce/checkout-sdk'
+import {embedCheckout} from '@bigcommerce/checkout-sdk'
 
 const service = createCheckoutService();
 
