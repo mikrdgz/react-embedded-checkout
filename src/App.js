@@ -20,7 +20,9 @@ componentDidMount(){
     }
   })
  }
- 
+ render(){
+   return <h1>BC Em</h1>
+ }
 }
 
 export default App;
