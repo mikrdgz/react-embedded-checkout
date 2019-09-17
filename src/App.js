@@ -6,7 +6,6 @@ import {embedCheckout} from '@bigcommerce/checkout-sdk'
 const service = createCheckoutService();
 
 
-
 class App extends React.Component {
 componentDidMount(){
   embedCheckout({
@@ -21,9 +20,7 @@ componentDidMount(){
     }
   })
  }
- render(){
-   return <h1>BC Checkout</h1>
- }
+ 
 }
 
 export default App;
